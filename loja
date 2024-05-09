@@ -84,7 +84,7 @@
                 <li><a href="#masculinas">Roupas Masculinas</a></li>
                 <li><a href="#femininas">Roupas Femininas</a></li>
                 <li><a href="#infantis">Roupas Infantis</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#acessorios">Acessórios</a></li>
             </ul>
         </nav>
     </header>
@@ -127,9 +127,22 @@
         
         <!-- Adicione mais produtos infantis aqui -->
     </section>
+    <section id="acessorios">
+        <h2>Acessórios</h2>
+        <div class="product">
+            <img src="imagem-produto-acessorios.jpg" alt="Nome do Produto Acessório">
+            <h3>Nome do Produto Acessório</h3>
+            <p>Descrição do produto e suas características.</p>
+            <p>Preço: R$ XX,XX</p>
+            <a href="#comprar" class="buy-button">Comprar</a>
+        </div>
+        
+        <!-- Adicione mais produtos acessorios aqui -->
+    </section>
 
     <footer>
         <p>&copy; 2024 Loja de Roupas</p>
     </footer>
 </body>
-</html
+</html>
+

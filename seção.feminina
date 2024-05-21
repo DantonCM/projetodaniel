@@ -11,40 +11,47 @@
             color: rgb(255, 0, 98);
           background-color: transparent;
           text-decoration: none;
+         text-align: center;
         }
         </style>
-    <meta charset="UTF-8" />
+        <style>
+           div.roupas {
+  width:80%;
+  overflow:auto;
+}
+div.roupas div {
+  width: 15%;  
+  float:left;
+} 
+        </style>
+    <meta charset="UTF-8"/>
 </head>
-<body>
- <h4 style="font-family: Arial, Helvetica, sans-serif;">Roupas Femininas</h4>
- <p style="font-family: Arial, Helvetica, sans-serif;">Categoria</p>
- <img height="140" src="https://i.pinimg.com/564x/12/52/79/125279262ed7e8fe624f28b3ea15f1a7.jpg">
-    <h5  style="font-family: sans-serif;"><a href="file:///C:/Users/heloi/OneDrive/Documentos/croppeds.loja.html">CROPPEDS</h5></a>
-    <img height="140" src="https://i.pinimg.com/564x/ee/bf/11/eebf117663a56b14cc17eb1b7dfe1bff.jpg">
-    <h5 style="font-family: sans-serif;" ><a href="file:///C:/Users/heloi/OneDrive/Documentos/camisetas.loja.html">CAMISETAS</h5></a>
-    <img  height="100" src="https://i.pinimg.com/564x/e2/f3/20/e2f320528d5719e028fe584aaf3144b1.jpg">
-    <h5 style="font-family: sans-serif;" > <a href="file:///C:/Users/heloi/OneDrive/Documentos/casacos.loja.html">Casacos</h5></a>
+ <div class="roupas">
     <div>
-   <img height="100" src="https://i.pinimg.com/564x/8e/ea/fb/8eeafb46fa84d7a90d9a26bef7015c6a.jpg">
-        <label><a href="file:///C:/Users/heloi/OneDrive/Documentos/vestidos.loja.html">Vestidos</label></a>
-    <select name="vestidos">
-        <option value="selecione">selecione</option>
-        <option value="longos">longos</option>
-        <option value="curtos">curtos</option>
-    </select>
+    <img width="50%"src="https://i.pinimg.com/736x/c2/75/0a/c2750aa6c8d4232b343f16c28689ee46.jpg">
+    <h5  style="font-family: sans-serif;"><a href="file:///C:/Users/heloi/OneDrive/Documentos/croppeds.loja.html">CROPPEDS</h5></a>
 </div>
-<img height="100" src="https://i.pinimg.com/564x/e0/15/46/e015468643ed648b36359293cca82faf.jpg">
-<h5 style="font-family: sans-serif;" > <a href="file:///C:/Users/heloi/OneDrive/Documentos/shorts.loja.html">Shorts</h5></a>
-   <img height="100" src="https://i.pinimg.com/564x/74/0b/5f/740b5f82b2ccc12c9c58280aef5755d1.jpg">
-<h5 style="font-family: sans-serif;"> <a href="file:///C:/Users/heloi/OneDrive/Documentos/cal%C3%A7as.loja.html">Calças</h5></a>
+    <div>
+<img  width="50%" src="https://i.pinimg.com/736x/d3/7f/11/d37f1141584860995d2af95090652338.jpg">
+    <h5 style="font-family: sans-serif;" ><a href="file:///C:/Users/heloi/OneDrive/Documentos/camisetas.loja.html">BLUSAS</h5></a>
+</div>
 <div>
-   <img height="100"  src="https://i.pinimg.com/564x/d9/3e/bc/d93ebc9e3ccf317d5cd8f4db0bfeacd6.jpg">
-    <label> <a href="file:///C:/Users/heloi/OneDrive/Documentos/saias.loja.html" style="text-decoration:none;" >Saias</label></a>
-    <select name="saias">
-        <option value="selecione">selecione</option>
-        <option value="longas">longas</option>
-        <option value="curtas">curtas</option>
-    </select>
+    <img  width="68%" src="https://i.pinimg.com/564x/67/ad/9a/67ad9a170293989e86ec72ed8055e4cb.jpg">
+    <h5 style="font-family: sans-serif;" > <a href="file:///C:/Users/heloi/OneDrive/Documentos/casacos.loja.html">CASACOS</h5></a>
+</div>
+    <div>
+   <img  width="50%" src="https://i.pinimg.com/736x/d9/2c/d2/d92cd253a079c307c3ee8b54b4ef8d64.jpg">
+        <h5  style="font-family: sans-serif;"><a href="file:///C:/Users/heloi/OneDrive/Documentos/vestidos.loja.html">VESTIDOS</h5></a>
+</div>
+<img width="8%" src="https://i.pinimg.com/564x/e0/15/46/e015468643ed648b36359293cca82faf.jpg">
+<h5 style="font-family: sans-serif;" > <a href="file:///C:/Users/heloi/OneDrive/Documentos/shorts.loja.html">SHORTS</h5></a>
+   <div>
+    <img  width="50%" src="https://i.pinimg.com/564x/d8/e5/ae/d8e5aec6c83c8dde6a7c5f1273332c9e.jpg">
+    <h5 style="font-family: sans-serif;"> <a href="file:///C:/Users/heloi/OneDrive/Documentos/cal%C3%A7as.loja.html">CALÇAS</h5></a>
+   </div>
+<div>
+   <img  width="70%" src="https://i.pinimg.com/736x/80/4f/e5/804fe58722eb36919ac99ad7cf23f55b.jpg">
+    <h5 style="font-family: sans-serif;"> <a href="file:///C:/Users/heloi/OneDrive/Documentos/saias.loja.html">SAIAS</h5></a>
 </div>
 </body>
 </html>

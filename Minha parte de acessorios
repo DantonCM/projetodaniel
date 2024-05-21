@@ -80,12 +80,6 @@
             cursor: pointer;
             border-radius: 5px;
         }
-       
-        
-          .planodefundo{
-              background-image:;
-          }
-
         .buy-button:hover {
             background-color: #262926;
         }
@@ -317,28 +311,21 @@
     <section id="acessorios">
         <h2>Acessórios</h2>
         <div class="acessorio1">
+            <a href="Relogios.html">
             <img src="https://m.media-amazon.com/images/I/51g0oUQgJML._AC_SY1000_.jpg" alt="Relogios" class="tamanho">
-            <h3>3-Blue</h3>
-            <p>Preço: R$ 229,00</p>
-            <a href="#comprar" class="buy-button" onclick="exibirFormulario()">Comprar</a>
-        </div>
-        <div class="acessorio2">
-            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/idmozetz/file.png" alt="Relogios" class="tamanho">
-            <h3>Mondaine casual</h3>
-            <p>R$ 189,00</p>
-            <a href="#comprar" class="buy-button" onclick="exibirFormulario()">Comprar</a>
+            <h3>Relogios</h3>
         </div>
         <div class="acessorio3">
+            <a href="Oculos.html">
             <img src="https://www.safira.com.br/cdn/imagens/produtos/det/oculos-de-sol-masculino-ray-ban-rb4420-60187-65-c8fd1e7e0b313dfd4e0c363ebaee150d.jpg" alt="Oculos" class="tamanho">
-            <h3>Oculos Ray-Ban</h3>
-            <p>R$ 584,00</p>
-            <a href="#comprar" class="buy-button" onclick="exibirFormulario()">Comprar</a>
+            <h3>Oculos</h3>
+            </a>
         </div>
         <div class="acessorio4">
+            <a href="Chapeu.html">
             <img src="https://crisecia.fbitsstatic.net/img/p/chapeu-stetson-caramelo-64433-98958/336571-1.jpg?w=640&h=600&v=no-change&qs=ignore" alt="Chapeu" class="tamanho">
-            <h3>Stetson Caramelo</h3>
-            <p>R$ 575,91</p>
-            <a href="#comprar" class="buy-button" onclick="exibirFormulario()">Comprar</a>
+            <h3>Chapeu</h3>
+            </a>
         </div>
             <!-- Adicione mais produtos acessorios aqui -->
         </section>    

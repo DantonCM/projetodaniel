@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapeus</title>
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo para o cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para a barra de navegação */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilo para os links na barra de navegação */
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Estilo para o conteúdo principal */
+        main {
+            padding: 20px;
+        }
+
+        /* Estilo para os produtos */
+        .produto {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .acessorio1 {
+            margin-bottom: 60px;
+        }
+        .acessorio2{
+            margin-bottom: 60px;
+        }
+        .acessorio3 {
+            margin-bottom: 60px;
+        }
+        .acessorio4 {
+            margin-bottom: 60px;
+        }
+        .tamanho {
+            width: 15%;
+        }
+        .buy-button {
+            background-color: #4d524d; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chapeus</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>
+        <div class="acessorio1">
+            <img src="c:\Users\davim\OneDrive\Imagens\146325670968e441a21.webp"alt="Chapeu" class="tamanho">
+            <h3>Chapeu Sacudido's - Estilo Coronel - Palha</h3>
+            <p>R$ 189,00</p>
+            <a href="#comprar" class="buy-button" onclick="exibirModal()">Comprar</a>
+        </div>
+        <div class="acessorio2">
+            <img src="c:\Users\davim\OneDrive\Imagens\336571-1.webp" alt="Chapeu" class="tamanho">
+            <h3>Chapeu Stetson Caramelo</h3>
+            <p>R$ 575,00</p>
+            <a href="#comprar" class="buy-button" onclick="exibirModal()">Comprar</a>
+        </div>
+        <div class="acessorio3">
+        <img src="c:\Users\davim\OneDrive\Imagens\images.jpeg" alt="Chapeu" class="tamanho">
+        <h3>chapeu country americano</h3>
+        <p>R$ 479,00</p>
+        <a href="#comprar" class="buy-button" onclick="exibirModal()">Comprar</a>
+    </div>
+    <div class="acessorio4">
+        <img src="c:\Users\davim\OneDrive\Imagens\chapeu_pralana_fedora_indy_la_cafe_263_3_1d08d9cdd618dc84c5ea0cbd729f7d6e.webp" alt="Chapeu" class="tamanho">
+        <h3>Chapeu Pralana Fedora</h3>
+        <p>R$ 325,00</p>
+        <a href="#comprar" class="buy-button" onclick="exibirModal()">Comprar</a>
+    </div>
+    </main>
+</div>
+    <!-- Seu JavaScript -->
+    <script>
+        // Função para exibir o modal
+        function exibirModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+        }
+        </script>
+     <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Preencha o formulário para finalizar a compra</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <h3>Informações do cartão</h3>
+            <label for="numero_cartao">Número do cartão:</label>
+            <input type="text" id="numero_cartao" name="numero_cartao" required>
+            <label for="validade_cartao">Validade:</label>
+            <input type="text" id="validade_cartao" name="validade_cartao" required>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="button" onclick="confirmarCompra()">Confirmar Compra</button>
+                <!-- Adicione mais campos conforme necessário -->
+                <br>
+            </form>
+        </div>
+    </div>
+    <!-- Seu JavaScript -->
+    <script>
+        // Obtenha o modal
+        var modal = document.getElementById("myModal");
+
+        // Obtenha o botão que abre o modal
+        var btn = document.getElementById("btnComprar");
+
+        // Obtenha o elemento <span> que fecha o modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Quando o usuário clicar no botão, abra o modal
+        btn.onclick = function myModal() {
+            modal.style.display = "block";
+        }
+
+        // Quando o usuário clicar no <span> (x), feche o modal
+        span.onclick = function close() {
+            modal.style.display = "none";
+        }
+
+        // Quando o usuário clicar em qualquer lugar fora do modal, feche-o
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            alert("Compra realizada com sucesso!\nNome: " + nome + "\nEmail: " + email + "\nTelefone: " + telefone);
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -5,42 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapeus</title>
     <style>
-        /* Estilo para o corpo da página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-
-        /* Estilo para o cabeçalho */
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-
-        /* Estilo para a barra de navegação */
         nav {
             background-color: #444;
             padding: 10px;
             text-align: center;
         }
-
-        /* Estilo para os links na barra de navegação */
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
         }
-
-        /* Estilo para o conteúdo principal */
         main {
             padding: 20px;
         }
-
-        /* Estilo para os produtos */
         .produto {
             background-color: #fff;
             border-radius: 5px;
@@ -48,8 +37,6 @@
             padding: 20px;
             margin-bottom: 20px;
         }
-
-        /* Estilo para o rodapé */
         footer {
             background-color: #333;
             color: #fff;
@@ -158,9 +145,7 @@
     </div>
     </main>
 </div>
-    <!-- Seu JavaScript -->
     <script>
-        // Função para exibir o modal
         function exibirModal() {
             var modal = document.getElementById("myModal");
             modal.style.display = "block";
@@ -186,33 +171,21 @@
             <input type="text" id="cvv" name="cvv" required>
 
             <button type="button" onclick="confirmarCompra()">Confirmar Compra</button>
-                <!-- Adicione mais campos conforme necessário -->
                 <br>
             </form>
         </div>
     </div>
     <!-- Seu JavaScript -->
     <script>
-        // Obtenha o modal
         var modal = document.getElementById("myModal");
-
-        // Obtenha o botão que abre o modal
         var btn = document.getElementById("btnComprar");
-
-        // Obtenha o elemento <span> que fecha o modal
         var span = document.getElementsByClassName("close")[0];
-
-        // Quando o usuário clicar no botão, abra o modal
         btn.onclick = function myModal() {
             modal.style.display = "block";
         }
-
-        // Quando o usuário clicar no <span> (x), feche o modal
         span.onclick = function close() {
             modal.style.display = "none";
         }
-
-        // Quando o usuário clicar em qualquer lugar fora do modal, feche-o
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";

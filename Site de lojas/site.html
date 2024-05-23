@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #070303;
+            color: hsl(0, 14%, 93%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .titulo{
+            color: #fff;
+             background: #000;
+             width: 20%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: hwb(0 93% 6%);
+            text-decoration: none;
+            background-color: #030303;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .product {
+            margin-bottom: 60px; /* Espaço entre cada produto */
+        }
+        
+        .product img {
+            margin-right: 30px; /* Espaço entre as imagens */
+        }
+        .product2 {
+            margin-bottom: 60px; /* Espaço entre cada produto */
+        }
+        
+        .product2 img {
+            margin-right: 30px; /* Espaço entre as imagens */
+        }
+        .product3 {
+            margin-bottom: 60px; /* Espaço entre cada produto */
+        }
+        
+        .product3 img {
+            margin-right: 30px; /* Espaço entre as imagens */
+        }
+        #infantis {
+            margin-right: 60px; /* Distância da borda direita */
+            margin-left: 60px; /* Distância da borda esquerda */
+            margin-top: 20px; /* Distância da borda superior */
+            margin-bottom: 20px; /* Distância da borda inferior */
+            display: flex;
+        }
+        .Imagencategory {
+            width: 200px; /* Define a largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .categoryname {
+            color: #333;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2px ;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .buy-button {
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+            padding-bottom: 100px;
+        }
+        .imginfantil1 {
+            border: 2px solid blue;
+        }
+
+        
+        .custom-loader::after { transform:rotate(180deg); transform-origin:right; }
+     
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Roupas</h1>
+        <nav>
+            <ul>
+                <li><a href="#masculinas">Roupas Masculinas</a></li>
+                <li><a href="#femininas">Roupas Femininas</a></li>
+                <li><a href="#infantis">Roupas Infantis</a></li>
+                <li><a href="#acessorios">Acessórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="masculinas">
+        <h2>Roupas Masculinas</h2>
+        <div class="product">
+            <img src="imagem-produto-masculino.jpg" alt="Nome do Produto Masculino">
+            <h3>Nome do Produto Masculino</h3>
+            <p>Descrição do produto e suas características.</p>
+            <p>Preço: R$ XX,XX</p>
+            <a href="#comprar" class="buy-button">Comprar</a>
+        </div>
+        
+        <!-- Adicione mais produtos masculinos aqui -->
+    </section>
+
+    <section id="femininas">
+        <h2>Roupas Femininas</h2>
+        <div class="product">
+            <img src="imagem-produto-feminino.jpg" alt="Nome do Produto Feminino">
+            <h3>Nome do Produto Feminino</h3>
+            <p>Descrição do produto e suas características.</p>
+            <p>Preço: R$ XX,XX</p>
+            <a href="#comprar" class="buy-button">Comprar</a>
+        </div>
+        
+        <!-- Adicione mais produtos femininos aqui -->
+    </section>
+
+    <h2>Roupas Infantis</h2>
+    <section id="infantis">
+        
+        
+        <div class="product">
+            
+        <a href="conjutos.html"> 
+            <h3 class="categoryname">Conjutos</h3>
+            <img src="Conjuntoimg.jpg" alt="Conjuntos Infantis" class="Imagencategory">
+        </a>
+        </div>
+            
+        <div class="product2">
+        <a href="sapatos.html">
+            <h3 class="categoryname">Sapatos</h3>
+            <img src="sapatosimg.jpg" alt="Sapatos" class="Imagencategory">
+        </a>
+        </div>
+
+        <div class="product3">
+        <a href="acessorios.html">
+            <h3 class="categoryname">Acessorios</h3>
+            <img src="acessoriosimg.jpg" alt="Acessorios" class="Imagencategory">
+        </a>
+        </div>
+        
+        
+        <!-- Adicione mais produtos infantis aqui -->
+    </section>
+    <section id="acessorios">
+        <h2>Acessórios</h2>
+        <div class="product">
+            <img src="imagem-produto-acessorios.jpg" alt="Nome do Produto Acessório">
+            <h3>Nome do Produto Acessório</h3>
+            <p>Descrição do produto e suas características.</p>
+            <p>Preço: R$ XX,XX</p>
+            <a href="#comprar" class="buy-button">Comprar</a>
+        </div>
+        
+        <!-- Adicione mais produtos acessorios aqui -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Loja de Roupas</p>
+    </footer>
+</body>
+</html>

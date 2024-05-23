@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        .produto {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .tamanho{
+            width: 15%;
+        }
+        .acessorio1 {
+            margin-bottom: 60px;
+        }
+        .acessorio2{
+            margin-bottom: 60px;
+        }
+        .acessorio3 {
+            margin-bottom: 60px;
+        }
+        .acessorio4 {
+            margin-bottom: 60px;
+        }
+        .buy-button {
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+
+        #formulario {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            z-index: 9999;
+            display: none;
+        }
+
+        #formulario input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #formulario button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #formulario button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Relogios</h1>
+    </header>
+    
+    <main>
+        <div class="acessorio1">
+            <img src="https://m.media-amazon.com/images/I/51g0oUQgJML._AC_SY1000_.jpg" alt="Relogios" class="tamanho">
+            <h3>3-Blue</h3>
+            <p>Preço: R$ 229,00</p>
+            <button class="buy-button" onclick="exibirFormulario()">Comprar</button>
+        </div>
+        <div class="acessorio2">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/idmozetz/file.png" alt="Relogios" class="tamanho">
+            <h3>Mondaine casual</h3>
+            <p>R$ 189,00</p>
+            <button class="buy-button" onclick="exibirFormulario()">Comprar</button>
+        </div>
+        <div class="acessorio3">
+            <img src=https://images.tcdn.com.br/img/img_prod/489488/relogio_orient_masculino_ref_mgssa006_g1kx_anadigi_dourado_30751_1_9ef223203ef56487562b6abcca2c083c.jpg alt="Relogios" class="tamanho">
+            <h3>Relogio Orient</h3>
+            <p>R$799,00</p>
+        <button class="buy-button" onclick="exibirFormulario()">Comprar</button>
+    </div>
+    <div class="acessorio4">
+        <img src=https://images.tcdn.com.br/img/img_prod/877056/relogio_de_pulso_mondaine_masculino_76659g0mv_11885_1_1745c8f0aee77dde986fbe50e08fd4ee.jpg alt="Relogios" class="tamanho">
+        <h3>Relogio Mondaine</h3>
+        <p>R$ 212,00</p>
+        <button class="buy-button" onclick="exibirFormulario()">Comprar</button>
+    </div>
+    </main>
+    </div>
+    <div id="formulario">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <h3>Informações do cartão</h3>
+            <label for="numero_cartao">Número do cartão:</label>
+            <input type="text" id="numero_cartao" name="numero_cartao" required>
+            <label for="validade_cartao">Validade:</label>
+            <input type="text" id="validade_cartao" name="validade_cartao" required>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="button" onclick="confirmarCompra()">Confirmar Compra</button>
+        </form>
+    </div>
+
+    <script>
+        function exibirFormulario() {
+            document.getElementById('formulario').style.display = 'block';
+        }
+
+        function confirmarCompra() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var telefone = document.getElementById('telefone').value;
+
+            
+
+            alert("Compra realizada com sucesso!\nNome: " + nome + "\nEmail: " + email + "\nTelefone: " + telefone);
+            document.getElementById('formulario').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

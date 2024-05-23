@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(../projetodaniel/plano-de-fundo-transparente-com-lindas-roupas-femininas-de-verao_257845-1811.avif);
+        }
+
+        header {
+            background-color: hsl(0, 2%, 20%);
+            color: hsl(0, 14%, 93%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .titulo {
+            color: #fff;
+            background: #000;
+            width: 20%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: hwb(0 93% 6%);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 20px; /* Reduzindo o espaçamento entre as seções */
+        }
+
+        .product {
+            margin-bottom: 20px; /* Reduzindo o espaçamento entre os produtos */
+            display: inline-block;
+            text-align: center; /* Centralizar texto */
+            width: 30%; /* Definir largura */
+            margin-right: 20px; /* Adicionando margem à direita para separar os produtos */
+        }
+
+        .product:last-child {
+            margin-right: 0; /* Remove a margem à direita do último produto */
+        }
+
+        .product img {
+            max-width: 80%; /* Reduzindo o tamanho das imagens */
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact-info,
+        .section-links {
+            flex: 1;
+        }
+
+        .contact-info h3,
+        .section-links h3 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .section-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section-links ul li {
+            margin-bottom: 5px;
+        }
+
+        .section-links ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .copyright {
+            margin-top: 20px;
+        }
+
+        /* Estilo para imagens das categorias */
+        .Imagencategory {
+            width: 100%; /* Imagens ocupam toda a largura do contêiner */
+            height: auto; /* Altura ajustável para manter proporções */
+        }
+
+        /* Estilo para os nomes das categorias */
+        .categoryname {
+            color: #333;
+            margin-top: 10px; /* Espaçamento acima do nome da categoria */
+        }
+
+        .section-spacing {
+            margin-bottom: 20px; /* Reduzindo o espaçamento entre as seções */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header_color">
+        <h1>Moda Front-end</h1>
+        <br><img src="https://th.bing.com/th/id/OIP.AZQ4qVj3NzDwJywVExFOSAHaEp?w=278&h=183&c=7&r=0&o=5&pid=1.7"
+            width="15.5%"><img
+            src="https://th.bing.com/th/id/OIP.62M6xCS87M-vLSoNsOQhQQHaE7?w=264&h=180&c=7&r=0&o=5&pid=1.7"
+            width="15%"><br><br>
+        <nav>
+            <ul class="ull">
+                <li class="menu-button"><a href="#femininas">Roupas Femininas</a></li>
+                <li class="menu-button"><a href="#infantis">Roupas Infantis</a></li>
+                <li class="menu-button"><a href="#acessorios">Acessórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Roupas Femininas</h2>
+    <section id="femininas" class="section-spacing">
+        <div class="roupas">
+            <div class="product">
+                <img src="blusa.jpeg">
+                <h5><a href="">BLUSAS</a></h5>
+            </div>
+            <div class="product">
+                <img src="saia.jpeg">
+                <h5><a href="file:///C:/Users/heloi/OneDrive/Documentos/saias.loja.html">SAIAS</a></h5>
+            </div>
+            <div class="product">
+                <img src="calça.jpeg">
+                <h5><a href="file:///C:/Users/heloi/OneDrive/Documentos/cal%C3%A7as.loja.html">CALÇAS</a></h5>
+            </div>
+        </div>
+    </section>
+
+    <h2>Roupas Infantis</h2>
+    <section id="infantis" class="section-spacing">
+        <div id="infantil">
+            <div class="product_infantil">
+                <a href="conjutos.html">
+                    <img src="Conjuntoimg.jpg" alt="Conjuntos Infantis" class="Imagencategory">
+                    <h3 class="categoryname">Conjuntos</h3>
+                </a>
+            </div>
+            <div class="product_infantil2">
+                <a href="sapatos.html">
+                    <img src="sapatosimg.jpg" alt="Sapatos" class="Imagencategory">
+                    <h3 class="categoryname">Sapatos</h3>
+                </a>
+            </div>
+            <div class="product_infantil3">
+                <a href="acessorios.html">
+                    <img src="acessoriosimg.jpg" alt="Acessorios" class="Imagencategory">
+                    <h3 class="categoryname">Acessórios</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <h2>Acessórios</h2>
+    <section id="acessorios" class="section-spacing">
+        <div id="acessorios">
+            <div class="acessorio">
+                <a href="relogios.html">
+                    <img src="https://m.media-amazon.com/images/I/51g0oUQgJML._AC_SY1000_.jpg" alt="Relogios"
+                        class="Imagencategory">
+                    <h3 class="categoryname">Relógios</h3>
+                </a>
+            </div>
+            <div class="acessorio">
+                <a href="oculos.html">
+                    <img src="https://www.safira.com.br/cdn/imagens/produtos/det/oculos-de-sol-masculino-ray-ban-rb4420-60187-65-c8fd1e7e0b313dfd4e0c363ebaee150d.jpg"
+                        alt="Ôculos" class="Imagencategory">
+                    <h3 class="categoryname">Ôculos</h3>
+                </a>
+            </div>
+            <div class="acessorio">
+                <a href="chapeu.html">
+                    <img src="https://crisecia.fbitsstatic.net/img/p/chapeu-stetson-caramelo-64433-98958/336571-1.jpg?w=640&h=600&v=no-change&qs=ignore"
+                        alt="Chapéu" class="Imagencategory">
+                    <h3 class="categoryname">Chapéu</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Entre em contato:</h3>
+                <p>Telefone: (xx) xxxxx-xxxx</p>
+                <p>Email: contato@lojaderoupas.com</p>
+            </div>
+            <div class="section-links">
+                <h3>Voltar para:</h3>
+                <ul>
+                    <li><a href="#femininas">Roupas Femininas</a></li>
+                    <li><a href="#infantis">Roupas Infantis</a></li>
+                    <li><a href="#acessorios">Acessórios</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Moda Front-end</p>
+    </footer>
+</body>
+
+</html>
